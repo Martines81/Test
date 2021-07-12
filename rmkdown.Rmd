@@ -143,7 +143,7 @@ library(raster,rgdal)
 
 ## On créé le modèle
 
-``` {r modele}
+``` {r modele,results = "hide"}
 
 for (k in 1:nbIter){  
   vals <- vals * exploit  
