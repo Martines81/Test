@@ -18,7 +18,7 @@ library(raster,rgdal)
 
   nbCol <- 10
   nbLigne <-10
-  nbIter <- 6
+  nbIter <- 15
   #On enleve les parcelles qui ont ete deja exploite des prix, il faut l enlever plus loin de la couche raster
   nvllExpl <- c()
   exploit <- c()#Les parcelles deja exploitees
@@ -143,7 +143,7 @@ library(raster,rgdal)
 
 ## On créé le modèle
 
-``` {r modele,results = "hide"}
+``` {r modele,results = "hide", error = TRUE}
 
 for (k in 1:nbIter){  
   vals <- vals * exploit  
